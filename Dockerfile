@@ -14,4 +14,4 @@ ADD https://boot.netboot.xyz/ipxe/netboot.xyz-snponly.efi /tftpboot/
 RUN find /tftpboot -type f -exec chmod 0444 {} +
 
 ENTRYPOINT ["sh", "-c"]
-CMD ["busybox syslogd -n -O /dev/stdout & in.tftpd -Lvvv --secure -u root /tftpboot"]
+CMD ["busybox syslogd -n -O /dev/stdout & in.tftpd -Lvvv --secure -u nobody /tftpboot"]
