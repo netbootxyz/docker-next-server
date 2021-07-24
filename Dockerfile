@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.14
 
 RUN mkdir -p /tftpboot; \
     apk --update add --no-cache tftp-hpa busybox
@@ -10,6 +10,8 @@ ADD https://boot.netboot.xyz/ipxe/netboot.xyz-undionly.kpxe /tftpboot/
 ADD https://boot.netboot.xyz/ipxe/netboot.xyz.efi /tftpboot/
 ADD https://boot.netboot.xyz/ipxe/netboot.xyz-snp.efi /tftpboot/
 ADD https://boot.netboot.xyz/ipxe/netboot.xyz-snponly.efi /tftpboot/
+ADD https://boot.netboot.xyz/ipxe/netboot.xyz-arm64.efi /tftpboot/
+ADD https://boot.netboot.xyz/ipxe/netboot.xyz-rpi4-snp.efi /tftpboot/
 
 RUN find /tftpboot -type f -exec chmod 0444 {} +
 
