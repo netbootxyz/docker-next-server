@@ -1,6 +1,6 @@
 # next-server
 
-Creates a Docker container running a minimal Alpine 3.11 tftp server
+Creates a Docker container running a minimal Alpine 3.14 tftp server
 that serves the latest netboot.xyz tftp boot disks for UEFI and
 Legacy.
 
