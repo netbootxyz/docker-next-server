@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.16
 
 RUN mkdir -p /tftpboot; \
     apk --update add --no-cache tftp-hpa busybox
