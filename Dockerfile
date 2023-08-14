@@ -11,6 +11,8 @@ ADD https://boot.netboot.xyz/ipxe/netboot.xyz.efi /tftpboot/
 ADD https://boot.netboot.xyz/ipxe/netboot.xyz-snp.efi /tftpboot/
 ADD https://boot.netboot.xyz/ipxe/netboot.xyz-snponly.efi /tftpboot/
 ADD https://boot.netboot.xyz/ipxe/netboot.xyz-arm64.efi /tftpboot/
+ADD https://boot.netboot.xyz/ipxe/netboot.xyz-arm64-snp.efi /tftpboot/
+ADD https://boot.netboot.xyz/ipxe/netboot.xyz-arm64-snponly.efi /tftpboot/
 ADD https://boot.netboot.xyz/ipxe/netboot.xyz-rpi4-snp.efi /tftpboot/
 
 RUN find /tftpboot -type f -exec chmod 0444 {} +
